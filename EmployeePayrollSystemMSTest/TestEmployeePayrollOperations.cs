@@ -41,5 +41,22 @@ namespace EmployeePayrollSystemMSTest
             DateTime t4 = DateTime.Now;
             Console.WriteLine("Time taken while adding to list with threading: " + (t4 - t3));
         }
+
+
+        [TestMethod]
+        public void CompareTimeAddingToDBWithOrWithoutThreading()
+        {
+            List<Employee> empList = AddingDataToList();
+            EmployeePayrollOperations employeePayrollOperations = new EmployeePayrollOperations();
+            DateTime t1 = DateTime.Now;
+            employeePayrollOperations.AddEmployeeListToDBWithoutThread(empList);
+            DateTime t2 = DateTime.Now;
+            Console.WriteLine("Time taken while adding to list without threading: " + (t2 - t1));
+
+            DateTime t3 = DateTime.Now;
+            employeePayrollOperations.AddEmployeeListToDBWithThread(empList);
+            DateTime t4 = DateTime.Now;
+            Console.WriteLine("Time taken while adding to list with threading: " + (t4 - t3));
+        }
     }
 }
