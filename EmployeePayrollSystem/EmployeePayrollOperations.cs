@@ -10,6 +10,7 @@ namespace EmployeePayrollSystem
     public class EmployeePayrollOperations
     {
         public List<Employee> employeeDataList = new List<Employee>();
+        NLog nLog = new NLog();
         public void AddEmployeeToDataBase(Employee employee)
         {
             SqlConnection sqlConnection = DBConnection.GetConnection();
@@ -47,6 +48,7 @@ namespace EmployeePayrollSystem
         {
             empList.ForEach(employee =>
             {
+                nLog.LogDebug("Adding of Employee: " + employee.employeeName);
                 Console.WriteLine("Employee being added" + employee.employeeName);
                 this.AddEmployeeToDataBase(employee);
                 Console.WriteLine("Employee added: " + employee.employeeName);
@@ -59,6 +61,7 @@ namespace EmployeePayrollSystem
             {
                 Task thread = new Task(() =>
                 {
+                    nLog.LogDebug("Adding of Employee: " + employee.employeeName);
                     Console.WriteLine("Employee Being added" + employee.employeeName);
                     this.AddEmployeeToDataBase(employee);
                     Console.WriteLine("Employee added: " + employee.employeeName);
@@ -71,6 +74,7 @@ namespace EmployeePayrollSystem
         {
             empList.ForEach(employee =>
             {
+                nLog.LogDebug("Adding of Employee: " + employee.employeeName);
                 Console.WriteLine("Employee being added" + employee.employeeName);
                 this.employeeDataList.Add(employee);
                 Console.WriteLine("Employee added: " + employee.employeeName);
@@ -83,6 +87,7 @@ namespace EmployeePayrollSystem
             {
                 Task thread = new Task(() =>
                 {
+                    nLog.LogDebug("Adding of Employee: " + employee.employeeName);
                     Console.WriteLine("Employee Being added" + employee.employeeName);
                     this.employeeDataList.Add(employee);
                     Console.WriteLine("Employee added: " + employee.employeeName);
