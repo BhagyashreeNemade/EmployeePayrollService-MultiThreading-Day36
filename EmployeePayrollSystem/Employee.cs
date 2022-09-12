@@ -12,6 +12,7 @@ namespace EmployeePayrollSystem
         public string address { get; set; }
         public DateTime startDate { get; set; }
         public string phoneNumber { get; set; }
+        public int deptID { get; set; }
         public string departmentName { get; set; }
         public double basicPay { get; set; }
     }

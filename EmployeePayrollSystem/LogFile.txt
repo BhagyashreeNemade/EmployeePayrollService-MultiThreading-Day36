@@ -39,3 +39,17 @@
 2022-09-12 23:46:20.6549|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A8
 2022-09-12 23:46:20.6549|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A9
 2022-09-12 23:46:20.6549|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A10
+2022-09-12 00:04:28.8462|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A1
+2022-09-12 00:04:34.7578|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A2
+2022-09-12 00:04:34.7966|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A3
+2022-09-12 00:04:34.7966|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A4
+2022-09-12 00:04:34.8656|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A5
+2022-09-12 00:04:34.8805|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A6
+2022-09-12 00:04:34.9240|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A7
+2022-09-12 00:04:35.0171|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A8
+2022-09-12 00:04:35.1181|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A9
+2022-09-12 00:04:35.1537|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A10
+2022-09-12 00:04:35.3468|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A1
+2022-09-12 00:04:35.3468|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A2
+2022-09-12 00:04:35.3468|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A3
+2022-09-12 00:04:35.7250|DEBUG|EmployeePayrollSystem.NLog|Adding of Employee: A4
